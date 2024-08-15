@@ -1,0 +1,17 @@
+#include <string>
+#include <vector>
+
+
+using namespace std;
+
+int solution(int n, int k) {
+    int answer = 0;
+    
+    int sheep_n = 12000;
+    int drink_k = 2000;
+    int sale = n/10.0;
+    
+    answer = sheep_n*n + drink_k*k - (sale*drink_k);
+    
+    return answer;
+}

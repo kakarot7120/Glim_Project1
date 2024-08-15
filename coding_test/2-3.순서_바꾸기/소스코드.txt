@@ -1,0 +1,16 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector<int> solution(vector<int> num_list, int n) {
+    vector<int> answer;
+    int vect_size = num_list.size();
+    
+    for(int i =n; i<vect_size; i++)
+        answer.emplace_back(num_list[i]);
+     for(int j =0; j<n; j++)
+         answer.emplace_back(num_list[j]);
+    
+    return answer;
+}

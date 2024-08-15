@@ -1,0 +1,16 @@
+#include <string>
+#include <vector>
+#include <iostream>
+
+int solution(int a, int b) {
+    int answer = 0;
+    std::string str_a = std::to_string(a);
+    std::string str_b = std::to_string(b);
+    
+    if(str_a+str_b > str_b + str_a)
+        answer = std::stoi(str_a+str_b);
+    else
+        answer = std::stoi(str_b+str_a);
+    
+    return answer;
+}
